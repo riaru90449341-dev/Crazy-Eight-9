@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=ZCOOL+KuaiLe&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", "ZCOOL KuaiLe", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "ZCOOL KuaiLe", serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  overflow: hidden;
+}
+
+.game-felt {
+  background: radial-gradient(circle at center, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.cartoon-bg {
+  background-color: #fef3c7;
+  background-image: radial-gradient(#fbbf24 2px, transparent 2px);
+  background-size: 40px 40px;
+}
+
+.card-fan {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Custom scrollbar for hand */
+.hand-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.hand-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.hand-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
